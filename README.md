@@ -1,784 +1,114 @@
-Contribution: 2020-01-24 00:00
+Auto Generating Gallery
+=======================
 
-Contribution: 2020-01-24 00:01
+This is build with the awesome php framework [Laravel 4](https://github.com/laravel/laravel).
 
-Contribution: 2020-01-24 00:02
+[See the demo](http://gallerydemo.martindilling.com)
 
-Contribution: 2020-01-24 00:03
+**Pretty, simple and easy gallery.**
 
-Contribution: 2020-01-24 00:04
+1. Upload albumfolder via ftp
+2. Visit domain.com/import
+3. Done ;)
 
-Contribution: 2020-01-24 00:05
+---
 
-Contribution: 2020-01-24 00:06
+## TOC
 
-Contribution: 2020-01-24 00:07
+* [Previews](#previews)
+* [Installation](#installation)
+* [Albums](#albums)
+* [Images](#images)
+* [Image descriptions](#image-descriptions)
+* [Album cover](#album-cover)
+* [Ready file](#ready-file)
+* [Starting import](#starting-import)
 
-Contribution: 2020-01-24 00:08
+---
 
-Contribution: 2020-01-27 00:00
+## Previews
 
-Contribution: 2020-01-27 00:01
+### Index view
 
-Contribution: 2020-01-28 00:00
+![Album preview](_sitealbums.png)
 
-Contribution: 2020-01-28 00:01
+### Album view
 
-Contribution: 2020-01-28 00:02
+![Album preview](_sitealbum.png)
 
-Contribution: 2020-01-28 00:03
+### Image view
 
-Contribution: 2020-01-28 00:04
+![Image preview](_siteimage.png)
 
-Contribution: 2020-01-29 00:00
+---
 
-Contribution: 2020-01-29 00:01
+## Installation
 
-Contribution: 2020-01-29 00:02
+Like with [Laravel 4](http://laravel.com/docs/installation) you need to install all the nessesary packages with composer:
 
-Contribution: 2020-01-29 00:03
+    composer install
 
-Contribution: 2020-01-29 00:04
+Configure the database settings in `app/config/database.php`
+And migrate the database with:
 
-Contribution: 2020-01-29 00:05
+    artisan migrate
 
-Contribution: 2020-01-29 00:06
+Change configuration of the gallery in `app/config/filegallery.php`, eg. set the Facebook App id for the commenting system and Google analytics id.
 
-Contribution: 2020-01-29 00:07
+That should be it ;)
 
-Contribution: 2020-01-29 00:08
+---
 
-Contribution: 2020-01-29 00:09
+## Albums
 
-Contribution: 2020-01-29 00:10
+Albums will be created from the folders in the `uploads` folder.
+The foldername will be used as the albumname, and the folders will be renamed to
+a more webfriendly name (strip special characers and replace spaces with dashes).
 
-Contribution: 2020-01-29 00:11
+![Albums](_album.png)
 
-Contribution: 2020-01-29 00:12
+---
 
-Contribution: 2020-01-29 00:13
+## Images
 
-Contribution: 2020-01-30 00:00
+Images will be created from the imagefiles in the album folders.
+Don't worry about the names they will be renamed to more webfriendly names
+(strip special characers and replace spaces with dashes).
 
-Contribution: 2020-01-30 00:01
+![Images](_images.png)
 
-Contribution: 2020-01-30 00:02
+---
 
-Contribution: 2020-01-30 00:03
+## Image descriptions
 
-Contribution: 2020-01-30 00:04
+To create a description for an image, create a *.txt file with the same name as
+the imagefile, and write the description in that file.
 
-Contribution: 2020-01-30 00:05
+![Description](_description.png)
 
-Contribution: 2020-01-30 00:06
+---
 
-Contribution: 2020-01-30 00:07
+## Album cover
 
-Contribution: 2020-01-30 00:08
+To set an image from the album as the cover picture, create an empty *.txt file,
+and name it `%imagefilename%_cover.txt`
 
-Contribution: 2020-01-30 00:09
+![Cover](_cover.png)
 
-Contribution: 2020-01-30 00:10
+---
 
-Contribution: 2020-01-30 00:11
+## Ready file
 
-Contribution: 2020-01-30 00:12
+To avoid starting import before you have all the files uploaded and ready,
+create an empty *.txt file named `ready.txt` to the `uploads` folder when you
+are ready to import the files.
 
-Contribution: 2020-01-31 00:00
+![Cover](_ready.png)
 
-Contribution: 2020-01-31 00:01
+---
 
-Contribution: 2020-01-31 00:02
+## Starting import
 
-Contribution: 2020-01-31 00:03
-
-Contribution: 2020-01-31 00:04
-
-Contribution: 2020-01-31 00:05
-
-Contribution: 2020-01-31 00:06
-
-Contribution: 2020-01-31 00:07
-
-Contribution: 2020-01-31 00:08
-
-Contribution: 2020-01-31 00:09
-
-Contribution: 2020-01-31 00:10
-
-Contribution: 2020-01-31 00:11
-
-Contribution: 2020-01-31 00:12
-
-Contribution: 2020-01-31 00:13
-
-Contribution: 2020-01-31 00:14
-
-Contribution: 2020-02-03 00:00
-
-Contribution: 2020-02-03 00:01
-
-Contribution: 2020-02-03 00:02
-
-Contribution: 2020-02-03 00:03
-
-Contribution: 2020-02-03 00:04
-
-Contribution: 2020-02-03 00:05
-
-Contribution: 2020-02-03 00:06
-
-Contribution: 2020-02-03 00:07
-
-Contribution: 2020-02-03 00:08
-
-Contribution: 2020-02-03 00:09
-
-Contribution: 2020-02-03 00:10
-
-Contribution: 2020-02-03 00:11
-
-Contribution: 2020-02-03 00:12
-
-Contribution: 2020-02-04 00:00
-
-Contribution: 2020-02-04 00:01
-
-Contribution: 2020-02-04 00:02
-
-Contribution: 2020-02-05 00:00
-
-Contribution: 2020-02-05 00:01
-
-Contribution: 2020-02-05 00:02
-
-Contribution: 2020-02-05 00:03
-
-Contribution: 2020-02-05 00:04
-
-Contribution: 2020-02-05 00:05
-
-Contribution: 2020-02-05 00:06
-
-Contribution: 2020-02-05 00:07
-
-Contribution: 2020-02-05 00:08
-
-Contribution: 2020-02-05 00:09
-
-Contribution: 2020-02-05 00:10
-
-Contribution: 2020-02-05 00:11
-
-Contribution: 2020-02-05 00:12
-
-Contribution: 2020-02-05 00:13
-
-Contribution: 2020-02-07 00:00
-
-Contribution: 2020-02-07 00:01
-
-Contribution: 2020-02-07 00:02
-
-Contribution: 2020-02-07 00:03
-
-Contribution: 2020-02-07 00:04
-
-Contribution: 2020-02-07 00:05
-
-Contribution: 2020-02-07 00:06
-
-Contribution: 2020-02-11 00:00
-
-Contribution: 2020-02-11 00:01
-
-Contribution: 2020-02-11 00:02
-
-Contribution: 2020-02-11 00:03
-
-Contribution: 2020-02-11 00:04
-
-Contribution: 2020-02-11 00:05
-
-Contribution: 2020-02-11 00:06
-
-Contribution: 2020-02-11 00:07
-
-Contribution: 2020-02-11 00:08
-
-Contribution: 2020-02-11 00:09
-
-Contribution: 2020-02-11 00:10
-
-Contribution: 2020-02-11 00:11
-
-Contribution: 2020-02-11 00:12
-
-Contribution: 2020-02-13 00:00
-
-Contribution: 2020-02-13 00:01
-
-Contribution: 2020-02-13 00:02
-
-Contribution: 2020-02-13 00:03
-
-Contribution: 2020-02-13 00:04
-
-Contribution: 2020-02-13 00:05
-
-Contribution: 2020-02-13 00:06
-
-Contribution: 2020-02-13 00:07
-
-Contribution: 2020-02-13 00:08
-
-Contribution: 2020-02-13 00:09
-
-Contribution: 2020-02-13 00:10
-
-Contribution: 2020-02-14 00:00
-
-Contribution: 2020-02-14 00:01
-
-Contribution: 2020-02-14 00:02
-
-Contribution: 2020-02-14 00:03
-
-Contribution: 2020-02-18 00:00
-
-Contribution: 2020-02-18 00:01
-
-Contribution: 2020-02-18 00:02
-
-Contribution: 2020-02-18 00:03
-
-Contribution: 2020-02-18 00:04
-
-Contribution: 2020-02-19 00:00
-
-Contribution: 2020-02-19 00:01
-
-Contribution: 2020-02-19 00:02
-
-Contribution: 2020-02-19 00:03
-
-Contribution: 2020-02-19 00:04
-
-Contribution: 2020-02-21 00:00
-
-Contribution: 2020-02-21 00:01
-
-Contribution: 2020-02-21 00:02
-
-Contribution: 2020-02-21 00:03
-
-Contribution: 2020-02-21 00:04
-
-Contribution: 2020-02-21 00:05
-
-Contribution: 2020-02-21 00:06
-
-Contribution: 2020-02-21 00:07
-
-Contribution: 2020-02-21 00:08
-
-Contribution: 2020-02-21 00:09
-
-Contribution: 2020-02-21 00:10
-
-Contribution: 2020-02-21 00:11
-
-Contribution: 2020-02-24 00:00
-
-Contribution: 2020-02-24 00:01
-
-Contribution: 2020-02-24 00:02
-
-Contribution: 2020-02-24 00:03
-
-Contribution: 2020-02-24 00:04
-
-Contribution: 2020-02-24 00:05
-
-Contribution: 2020-02-24 00:06
-
-Contribution: 2020-02-24 00:07
-
-Contribution: 2020-02-24 00:08
-
-Contribution: 2020-02-24 00:09
-
-Contribution: 2020-02-26 00:00
-
-Contribution: 2020-02-26 00:01
-
-Contribution: 2020-02-26 00:02
-
-Contribution: 2020-02-26 00:03
-
-Contribution: 2020-02-26 00:04
-
-Contribution: 2020-02-26 00:05
-
-Contribution: 2020-02-27 00:00
-
-Contribution: 2020-02-27 00:01
-
-Contribution: 2020-02-27 00:02
-
-Contribution: 2020-02-27 00:03
-
-Contribution: 2020-02-27 00:04
-
-Contribution: 2020-02-27 00:05
-
-Contribution: 2020-02-27 00:06
-
-Contribution: 2020-02-27 00:07
-
-Contribution: 2020-02-27 00:08
-
-Contribution: 2020-02-27 00:09
-
-Contribution: 2020-02-27 00:10
-
-Contribution: 2020-03-02 00:00
-
-Contribution: 2020-03-02 00:01
-
-Contribution: 2020-03-02 00:02
-
-Contribution: 2020-03-02 00:03
-
-Contribution: 2020-03-02 00:04
-
-Contribution: 2020-03-02 00:05
-
-Contribution: 2020-03-02 00:06
-
-Contribution: 2020-03-02 00:07
-
-Contribution: 2020-03-02 00:08
-
-Contribution: 2020-03-02 00:09
-
-Contribution: 2020-03-02 00:10
-
-Contribution: 2020-03-02 00:11
-
-Contribution: 2020-03-02 00:12
-
-Contribution: 2020-03-02 00:13
-
-Contribution: 2020-03-02 00:14
-
-Contribution: 2020-03-03 00:00
-
-Contribution: 2020-03-03 00:01
-
-Contribution: 2020-03-03 00:02
-
-Contribution: 2020-03-10 00:00
-
-Contribution: 2020-03-10 00:01
-
-Contribution: 2020-03-10 00:02
-
-Contribution: 2020-03-10 00:03
-
-Contribution: 2020-03-10 00:04
-
-Contribution: 2020-03-10 00:05
-
-Contribution: 2020-03-10 00:06
-
-Contribution: 2020-03-10 00:07
-
-Contribution: 2020-03-10 00:08
-
-Contribution: 2020-03-10 00:09
-
-Contribution: 2020-03-10 00:10
-
-Contribution: 2020-03-11 00:00
-
-Contribution: 2020-03-11 00:01
-
-Contribution: 2020-03-11 00:02
-
-Contribution: 2020-03-11 00:03
-
-Contribution: 2020-03-11 00:04
-
-Contribution: 2020-03-11 00:05
-
-Contribution: 2020-03-11 00:06
-
-Contribution: 2020-03-11 00:07
-
-Contribution: 2020-03-11 00:08
-
-Contribution: 2020-03-11 00:09
-
-Contribution: 2020-03-12 00:00
-
-Contribution: 2020-03-12 00:01
-
-Contribution: 2020-03-12 00:02
-
-Contribution: 2020-03-12 00:03
-
-Contribution: 2020-03-12 00:04
-
-Contribution: 2020-03-12 00:05
-
-Contribution: 2020-03-12 00:06
-
-Contribution: 2020-03-12 00:07
-
-Contribution: 2020-03-12 00:08
-
-Contribution: 2020-03-12 00:09
-
-Contribution: 2020-03-12 00:10
-
-Contribution: 2020-03-12 00:11
-
-Contribution: 2020-03-12 00:12
-
-Contribution: 2020-03-12 00:13
-
-Contribution: 2020-03-12 00:14
-
-Contribution: 2020-03-13 00:00
-
-Contribution: 2020-03-13 00:01
-
-Contribution: 2020-03-13 00:02
-
-Contribution: 2020-03-13 00:03
-
-Contribution: 2020-03-13 00:04
-
-Contribution: 2020-03-16 00:00
-
-Contribution: 2020-03-16 00:01
-
-Contribution: 2020-03-17 00:00
-
-Contribution: 2020-03-17 00:01
-
-Contribution: 2020-03-17 00:02
-
-Contribution: 2020-03-17 00:03
-
-Contribution: 2020-03-17 00:04
-
-Contribution: 2020-03-17 00:05
-
-Contribution: 2020-03-17 00:06
-
-Contribution: 2020-03-17 00:07
-
-Contribution: 2020-03-17 00:08
-
-Contribution: 2020-03-17 00:09
-
-Contribution: 2020-03-17 00:10
-
-Contribution: 2020-03-17 00:11
-
-Contribution: 2020-03-17 00:12
-
-Contribution: 2020-03-17 00:13
-
-Contribution: 2020-03-19 00:00
-
-Contribution: 2020-03-19 00:01
-
-Contribution: 2020-03-19 00:02
-
-Contribution: 2020-03-19 00:03
-
-Contribution: 2020-03-19 00:04
-
-Contribution: 2020-03-19 00:05
-
-Contribution: 2020-03-19 00:06
-
-Contribution: 2020-03-19 00:07
-
-Contribution: 2020-03-19 00:08
-
-Contribution: 2020-03-19 00:09
-
-Contribution: 2020-03-19 00:10
-
-Contribution: 2020-03-19 00:11
-
-Contribution: 2020-03-19 00:12
-
-Contribution: 2020-03-20 00:00
-
-Contribution: 2020-03-20 00:01
-
-Contribution: 2020-03-20 00:02
-
-Contribution: 2020-03-20 00:03
-
-Contribution: 2020-03-20 00:04
-
-Contribution: 2020-03-20 00:05
-
-Contribution: 2020-03-20 00:06
-
-Contribution: 2020-03-20 00:07
-
-Contribution: 2020-03-20 00:08
-
-Contribution: 2020-03-20 00:09
-
-Contribution: 2020-03-20 00:10
-
-Contribution: 2020-03-20 00:11
-
-Contribution: 2020-03-20 00:12
-
-Contribution: 2020-03-20 00:13
-
-Contribution: 2020-03-23 00:00
-
-Contribution: 2020-03-23 00:01
-
-Contribution: 2020-03-23 00:02
-
-Contribution: 2020-03-25 00:00
-
-Contribution: 2020-03-25 00:01
-
-Contribution: 2020-03-25 00:02
-
-Contribution: 2020-03-25 00:03
-
-Contribution: 2020-03-27 00:00
-
-Contribution: 2020-03-27 00:01
-
-Contribution: 2020-03-27 00:02
-
-Contribution: 2020-03-27 00:03
-
-Contribution: 2020-03-27 00:04
-
-Contribution: 2020-03-27 00:05
-
-Contribution: 2020-03-27 00:06
-
-Contribution: 2020-03-27 00:07
-
-Contribution: 2020-03-27 00:08
-
-Contribution: 2020-03-27 00:09
-
-Contribution: 2020-03-27 00:10
-
-Contribution: 2020-03-27 00:11
-
-Contribution: 2020-03-27 00:12
-
-Contribution: 2020-03-27 00:13
-
-Contribution: 2020-03-27 00:14
-
-Contribution: 2020-03-31 00:00
-
-Contribution: 2020-03-31 00:01
-
-Contribution: 2020-03-31 00:02
-
-Contribution: 2020-03-31 00:03
-
-Contribution: 2020-03-31 00:04
-
-Contribution: 2020-03-31 00:05
-
-Contribution: 2020-03-31 00:06
-
-Contribution: 2020-03-31 00:07
-
-Contribution: 2020-03-31 00:08
-
-Contribution: 2020-03-31 00:09
-
-Contribution: 2020-03-31 00:10
-
-Contribution: 2020-03-31 00:11
-
-Contribution: 2020-03-31 00:12
-
-Contribution: 2020-04-01 00:00
-
-Contribution: 2020-04-01 00:01
-
-Contribution: 2020-04-01 00:02
-
-Contribution: 2020-04-01 00:03
-
-Contribution: 2020-04-01 00:04
-
-Contribution: 2020-04-01 00:05
-
-Contribution: 2020-04-01 00:06
-
-Contribution: 2020-04-01 00:07
-
-Contribution: 2020-04-01 00:08
-
-Contribution: 2020-04-01 00:09
-
-Contribution: 2020-04-01 00:10
-
-Contribution: 2020-04-01 00:11
-
-Contribution: 2020-04-06 00:00
-
-Contribution: 2020-04-06 00:01
-
-Contribution: 2020-04-06 00:02
-
-Contribution: 2020-04-06 00:03
-
-Contribution: 2020-04-06 00:04
-
-Contribution: 2020-04-06 00:05
-
-Contribution: 2020-04-06 00:06
-
-Contribution: 2020-04-07 00:00
-
-Contribution: 2020-04-07 00:01
-
-Contribution: 2020-04-07 00:02
-
-Contribution: 2020-04-07 00:03
-
-Contribution: 2020-04-07 00:04
-
-Contribution: 2020-04-07 00:05
-
-Contribution: 2020-04-07 00:06
-
-Contribution: 2020-04-07 00:07
-
-Contribution: 2020-04-07 00:08
-
-Contribution: 2020-04-07 00:09
-
-Contribution: 2020-04-07 00:10
-
-Contribution: 2020-04-07 00:11
-
-Contribution: 2020-04-07 00:12
-
-Contribution: 2020-04-07 00:13
-
-Contribution: 2020-04-08 00:00
-
-Contribution: 2020-04-08 00:01
-
-Contribution: 2020-04-08 00:02
-
-Contribution: 2020-04-08 00:03
-
-Contribution: 2020-04-09 00:00
-
-Contribution: 2020-04-14 00:00
-
-Contribution: 2020-04-14 00:01
-
-Contribution: 2020-04-14 00:02
-
-Contribution: 2020-04-14 00:03
-
-Contribution: 2020-04-14 00:04
-
-Contribution: 2020-04-14 00:05
-
-Contribution: 2020-04-14 00:06
-
-Contribution: 2020-04-14 00:07
-
-Contribution: 2020-04-14 00:08
-
-Contribution: 2020-04-15 00:00
-
-Contribution: 2020-04-15 00:01
-
-Contribution: 2020-04-15 00:02
-
-Contribution: 2020-04-15 00:03
-
-Contribution: 2020-04-15 00:04
-
-Contribution: 2020-04-15 00:05
-
-Contribution: 2020-04-15 00:06
-
-Contribution: 2020-04-15 00:07
-
-Contribution: 2020-04-15 00:08
-
-Contribution: 2020-04-15 00:09
-
-Contribution: 2020-04-15 00:10
-
-Contribution: 2020-04-15 00:11
-
-Contribution: 2020-04-15 00:12
-
-Contribution: 2020-04-15 00:13
-
-Contribution: 2020-04-17 00:00
-
-Contribution: 2020-04-17 00:01
-
-Contribution: 2020-04-17 00:02
-
-Contribution: 2020-04-17 00:03
-
-Contribution: 2020-04-17 00:04
-
-Contribution: 2020-04-17 00:05
-
-Contribution: 2020-04-17 00:06
-
-Contribution: 2020-04-17 00:07
-
-Contribution: 2020-04-17 00:08
-
-Contribution: 2020-04-20 00:00
-
-Contribution: 2020-04-20 00:01
-
-Contribution: 2020-04-20 00:02
-
-Contribution: 2020-04-20 00:03
-
-Contribution: 2020-04-20 00:04
-
-Contribution: 2020-04-20 00:05
-
-Contribution: 2020-04-20 00:06
-
-Contribution: 2020-04-21 00:00
-
-Contribution: 2020-04-21 00:01
-
-Contribution: 2020-04-21 00:02
-
-Contribution: 2020-04-21 00:03
-
-Contribution: 2020-04-21 00:04
-
-Contribution: 2020-04-21 00:05
-
+To start the import, make sure you have uploaded the files and created the
+ready-file. Then go to the route `/import`, eg. mywebgallery.com/import.
+It will be working some time depending on the size of the images you want to import ;)
